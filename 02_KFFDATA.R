@@ -16,6 +16,9 @@ library(jsonlite)
 library(rvest)
 library(R.utils)
 
+
+
+
 url <- "https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&print=true&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
   
   download.file(url, KFFdata, "libcurl")  
@@ -29,6 +32,8 @@ url <- "https://www.kff.org/other/state-indicator/total-residents/?currentTimefr
 pop_2016 <-fread("TotalResidents.csv")
 removedrows <- "United States"
 pop_2016 <- pop_2016[-1, ]
+
+View(pop_2016)
 
 #Load Table Total Number of Residents in 2016 from KFF XML(scrapping from web)
 #Did not work
