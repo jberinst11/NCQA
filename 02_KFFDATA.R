@@ -1,64 +1,47 @@
-
+#Install Packages
 install.packages("readr")
 install.packages("data.table")
-install.packages("XML")
-install.packages("rjson")
-install.packages("jsonlite")
-install.packages("rvest")
-install.packages('R.utils')
 
-
+#Load Library
 library(readr)
 library(data.table)
-library(XML)
-library(rjson)
-library(jsonlite)
-library(rvest)
-library(R.utils)
+
+# Total Residents in 2016 from KFF 
+total_residents_2016 <-fread("Total Number of Residents.csv")
+total_residents_2016 <- total_residents_2016[-1, ]   
+names(total_residents_2016) <- c("year", "state", "total_residents_2016")
+
+
+# Population Distribution by Age in 2016 from KFF
+pop_dis_by_age <- fread("Population Distribution by Age.csv")
+pop_dis_by_age<- pop_dis_by_age[-1, ]
+names(pop_dis_by_age) <- c("year", "state", "no_pop_age0-18_2016", "no_pop_age19-25_2016",
+                                 "no_pop_age26-34_2016", "no_pop_age35-54_2016", "no_pop_age55-64_2016", 
+                                 "no_pop_age65+_2016", "no_pop_total_2016","per_pop_age0-18_2016", "per_pop_age19-25_2016",
+                                 "per_pop_age26-34_2016", "per_pop_age35-54_2016", "per_pop_age55-64_2016", 
+                                 "per_pop_age65+_2016", "per_pop_total_2016")
 
 
 
-
-url <- "https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&print=true&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
-  
-  download.file(url, KFFdata, "libcurl")  
-
-#Andrew Help me. I need to load the following website. I cannot figure out how to do this
+#Population Distribution by Citizenship Status for 2016 from KFF
+pop_dis_by_cit_stat <- fread("Population Distribution by Citizenship Status.csv") 
+pop_dis_by_cit_stat <- pop_dis_by_cit_stat[-1, -c(5,8)]
+names(pop_dis_by_cit_stat) <- c("year", "state", "no_cit_stat_2016", "no_noncit_stat_2016", "per_cit_stat_2016", "per_noncit_stat_2016")
 
 
-#Load Table Total Number of Residents in 2016 from KFF using CSV file
-#https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&print=true&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
+#Population Distribution by Family Structure for 2016 from KFF
+pop_dis_fam_str <- fread("Population Distribution by Family Structure.csv")
+pop_dis_fam_str <- pop_dis_fam_str[-1, -c(5,8)] 
+names(pop_dis_fam_str) <- c("year", "state", "no_with_child_2016", "no_without_child_2016", "per_with_child_2016", "per_without_child_2016")
 
-pop_2016 <-fread("TotalResidents.csv")
-removedrows <- "United States"
-pop_2016 <- pop_2016[-1, ]
+#Population Distribution by Gender for 2016 from KFF
+pop_dis_gen <- fread("Population Distribution by Gender.csv")
+pop_dis_gen <- pop_dis_gen[-1, -c(5,8)] 
+names(pop_dis_gen) <- c("year", "state", "no_male_2016", "no_female_2016", "per_male_2016", "per_female_2016")
 
-View(pop_2016)
-
-#Load Table Total Number of Residents in 2016 from KFF XML(scrapping from web)
-#Did not work
-
-pop_2016_KFF ="https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D"
-pop_2016_table = readHTMLTable(mydf, header=TRUE, which =1)
-View(pop_2016_table)
-
-#Will try again using Json files
-
-website1 <- "https://forms.hubspot.com/lead-flows-config/v1/config/json?portalId=292449&utk=2e19f08a9ef2d997189118391cda264d"
-mydata1 <- fromJSON(website1)
-
-View(mydata1)
-
-#Will try using fread
-
-popdataKFF2016 <- fread("https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D")
-
-
-url <- 'https://www.kff.org/other/state-indicator/total-residents/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D'
-popkff2016 <- read_html(url)
-View(popkff2016)
-
-
-#Calen was not here.. Sorry no where to be found
-
+#Population Distribution by Race/Ethnicity
+pop_dis_race <- fread("Population Distribution by RaceEthnicity.csv")
+pop_dis_race <- pop_dis_race[-1, -c(10, 18)]
+names(pop_dis_race) <- c("year", "state","no_white_2016", "no_black_2016", "no_hispanic_2016", "no_asian_2016", "no_native_2016", "no_pacific_2016", "no_two_or_more_races_2016",
+                         "per_white_2016", "per_black_2016", "per_hispanic_2016", "per_asian_2016", "per_native_2016", "per_pacific_2016", "per_two_or_more_races_2016")
 
