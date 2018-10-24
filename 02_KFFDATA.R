@@ -6,6 +6,7 @@ install.packages("data.table")
 library(readr)
 library(data.table)
 library(dplyr)
+library(ggplot2)
 
 # Total Residents in 2016 from KFF 
 total_residents_2016 <-fread("Total Number of Residents.csv")
@@ -51,4 +52,6 @@ names(pop_dis_race) <- c("year", "state","no_white_2016", "no_black_2016", "no_h
 super_table<- Reduce(merge, list(total_residents_2016, pop_dis_by_age, pop_dis_by_cit_stat, pop_dis_fam_str, pop_dis_gen, pop_dis_race))
 
 View(super_table)
+
+#look Andrew, check this out
 
