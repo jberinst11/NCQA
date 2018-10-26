@@ -1,0 +1,53 @@
+Year,Location,Lowest Cost Urban Area,Lowest Cost Urban Area,Lowest Cost Urban Area,Middle Cost Urban Area,Middle Cost Urban Area,Middle Cost Urban Area,Highest Cost Urban Area,Highest Cost Urban Area,Highest Cost Urban Area
+2015,United States,N\/A,N\/A,N\/A,97000,4.00,N\/A,N\/A,N\/A,N\/A
+2015,Alabama,84099,3.47,Anniston-Calhoun County,88949,3.67,Dothan,90792,3.74,Mobile
+2015,Alaska,161181,6.65,Anchorage,163971,6.76,Fairbanks,171247,7.06,Kodiak
+2015,Arizona,88949,3.67,Bullhead City,93314,3.85,Prescott-Prescott Valley,98552,4.06,Tucson
+2015,Arkansas,84778,3.50,Fayetteville,86524,3.57,Hot Springs,94090,3.88,Little Rock-North Little Rock
+2015,California,102723,4.24,Orange County,137643,5.68,San Diego,168004,6.93,Truckee-Nevada County
+2015,Colorado,79928,3.30,Colorado Springs,94284,3.89,Grand Junction,118534,4.89,Gunnison
+2015,Connecticut,120765,4.98,Stamford,N\/A,N\/A,N\/A,140553,5.80,Hartford
+2015,Delaware,96612,3.98,Dover,N\/A,N\/A,N\/A,103305,4.26,Wilmington
+2015,District of Columbia,N\/A,N\/A,N\/A,139001,5.73,Washington-Arlington-Alexandria,N\/A,N\/A,N\/A
+2015,Florida,89822,3.70,Daytona Beach,95351,3.93,Jacksonville,111453,4.60,Tampa
+2015,Georgia,84293,3.48,Albany,87300,3.60,Augusta-Aiken,98552,4.06,Valdosta
+2015,Hawaii,168679,6.96,Hilo,N\/A,N\/A,N\/A,212410,8.76,Honolulu
+2015,Idaho,79928,3.30,Boise,88076,3.63,Idaho Falls,88755,3.66,Twin Falls
+2015,Illinois,86912,3.58,Champaign-Urbana,91859,3.79,Decatur,111162,4.58,Springfield
+2015,Indiana,80025,3.30,Evansville,86912,3.58,Indianapolis-Morgan County,94381,3.89,Terre Haute
+2015,Iowa,83420,3.44,Ames,89725,3.70,Davenport-Moline-Rock Is,97000,4.00,Waterloo-Cedar Falls
+2015,Kansas,87882,3.62,Dodge City,88270,3.64,Manhattan,91859,3.79,Wichita
+2015,Kentucky,85069,3.51,Bowling Green,86427,3.56,Covington,90889,3.75,Louisville
+2015,Louisiana,87785,3.62,Alexandria,90210,3.72,Lafayette,96903,4.00,Shreveport-Bossier City
+2015,Maine,N\/A,N\/A,N\/A,112326,4.63,Portland,N\/A,N\/A,N\/A
+2015,Maryland,108058,4.46,Baltimore,N\/A,N\/A,N\/A,125130,5.16,Bethesda-Gaithersburg-Frederick
+2015,Massachusetts,108640,4.48,Boston,N\/A,N\/A,N\/A,136091,5.61,Pittsfield
+2015,Michigan,81771,3.37,Detroit,88852,3.66,Grand Rapids,91859,3.79,Benton Harbor
+2015,Minnesota,92247,3.80,Mankato,92441,3.81,Minneapolis,103887,4.28,St. Cloud
+2015,Mississippi,80898,3.34,Hattiesburg,N\/A,N\/A,N\/A,81480,3.36,Tupelo
+2015,Missouri,85360,3.52,Columbia,88367,3.64,Joplin,91956,3.79,Springfield
+2015,Montana,N\/A,N\/A,N\/A,99037,4.08,Bozeman,N\/A,N\/A,N\/A
+2015,Nebraska,89046,3.67,Hastings,89822,3.70,Lincoln,92538,3.82,Omaha
+2015,Nevada,100007,4.12,Las Vegas,N\/A,N\/A,N\/A,104469,4.31,Reno-Sparks
+2015,New Hampshire,N\/A,N\/A,N\/A,113878,4.70,Manchester,N\/A,N\/A,N\/A
+2015,New Jersey,116303,4.80,Newark-Elizabeth,121250,5.00,Bergen-Passaic,123966,5.11,Middlesex-Monmouth
+2015,New Mexico,N\/A,N\/A,N\/A,N\/A,N\/A,N\/A,N\/A,N\/A,N\/A
+2015,New York,92732,3.82,Albany,104566,4.31,Ithaca,216989,8.95,Rochester
+2015,North Carolina,87979,3.63,Asheville,93023,3.84,Dare County,106894,4.41,Winston-Salem
+2015,North Dakota,93120,3.84,Bismarck-Mandan,98067,4.04,Fargo-Moorhead,100007,4.12,Minot
+2015,Ohio,79540,3.28,Akron,91762,3.78,Columbus,100395,4.14,Youngstown-Warren
+2015,Oklahoma,80316,3.31,Ardmore,86912,3.58,Norman,92732,3.82,Pryor Creek
+2015,Oregon,N\/A,N\/A,N\/A,124645,5.14,Portland,N\/A,N\/A,N\/A
+2015,Pennsylvania,91374,3.77,Johnstown,97776,4.03,Philadelphia,116982,4.82,York County
+2015,Rhode Island,N\/A,N\/A,N\/A,119601,4.93,Providence,N\/A,N\/A,N\/A
+2015,South Carolina,84972,3.50,Charleston-N Charleston,92344,3.81,Anderson,97970,4.04,Myrtle Beach
+2015,South Dakota,N\/A,N\/A,N\/A,98261,4.05,Pierre,N\/A,N\/A,N\/A
+2015,Tennessee,82450,3.40,Chattanooga,88270,3.64,Knoxville,92247,3.80,Nashville-Murfreesboro
+2015,Texas,74884,3.09,Abilene,90113,3.72,Temple,100686,4.15,Wichita Falls
+2015,Utah,85360,3.52,Cedar City,89046,3.67,St. George,94672,3.90,Salt Lake City
+2015,Vermont,N\/A,N\/A,N\/A,119892,4.94,Burlington-Chittenden County,N\/A,N\/A,N\/A
+2015,Virginia,83226,3.43,Blacksburg,92829,3.83,Martinsville-Henry County,99813,4.12,Lexington-Buena Vista-Rockbridge
+2015,Washington,88949,3.67,Bellingham,97291,4.01,Olympia,129107,5.32,Yakima
+2015,West Virginia,N\/A,N\/A,N\/A,101656,4.19,Morgantown,N\/A,N\/A,N\/A
+2015,Wisconsin,88464,3.65,Eau Claire,94963,3.92,Janesville,102141,4.21,Marshfield
+2015,Wyoming,N\/A,N\/A,N\/A,89919,3.71,Laramie,N\/A,N\/A,N\/A

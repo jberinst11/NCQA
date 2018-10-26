@@ -41,17 +41,23 @@ pop_dis_gen <- fread("Population Distribution by Gender.csv")
 pop_dis_gen <- pop_dis_gen[-1, -c(5,8)] 
 names(pop_dis_gen) <- c("year", "state", "no_male_2016", "no_female_2016", "per_male_2016", "per_female_2016")
 
-#Population Distribution by Race/Ethnicity
+#Population Distribution by Race/Ethnicity for 2016 from KFF
 pop_dis_race <- fread("Population Distribution by RaceEthnicity.csv")
 pop_dis_race <- pop_dis_race[-1, -c(10, 18)]
 names(pop_dis_race) <- c("year", "state","no_white_2016", "no_black_2016", "no_hispanic_2016", "no_asian_2016", "no_native_2016", "no_pacific_2016", "no_two_or_more_races_2016",
                          "per_white_2016", "per_black_2016", "per_hispanic_2016", "per_asian_2016", "per_native_2016", "per_pacific_2016", "per_two_or_more_races_2016")
 
+#Distribution of Total Population by Federal Poverty Levelfor 2016 from KFF
+dis_tot_pop_poverty_level <- fread("Distribution of Total Population by Federal Poverty Level.csv")
+dis_tot_pop_poverty_level  <- dis_tot_pop_poverty_level[-1, -c(7,12)]
+names(dis_tot_pop_poverty_level) <- c("year", "state", "no_fpv<100_2016",  "no_fpv100-199_2016", "no_fpv200-399_2016", "no_fpv>400_2016", 
+                                      "per_fpv<100_2016",  "per_fpv100-199_2016", "per_fpv200-399_2016", "per_fpv>400_2016")
+
 #Combine all tables using reduce function to merge
 
-super_table<- Reduce(merge, list(total_residents_2016, pop_dis_by_age, pop_dis_by_cit_stat, pop_dis_fam_str, pop_dis_gen, pop_dis_race))
+tablecomplete1<- Reduce(merge, list(total_residents_2016, pop_dis_by_age, pop_dis_by_cit_stat, pop_dis_fam_str, pop_dis_gen, pop_dis_race))
 
 View(super_table)
 
-#look Andrew, check this out
+
 
